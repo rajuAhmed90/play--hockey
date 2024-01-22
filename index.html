@@ -1,11 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lets play Hockey</title>
+    <!-- tailwind and Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Manrope Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- font awesome CDN -->
+    <script src="https://kit.fontawesome.com/961e3c92aa.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        .manrope {
+            font-family: 'manrope';
+        }
+
+        .common-color {
+            color: #FF4240;
+        }
+
+        .common-back {
+            background: #FF4240;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="manrope">
+
+    <!-- header start -->
+    <header class="mt-10 px-5 lg:px-12 md:container md:mx-auto">
+        <!-- nav start here  -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a class="text-base font-bold common-color">Home</a></li>
+                        <li><a class="text-base font-bold">About</a></li>
+                        <li><a class="text-base font-bold">Pages</a></li>
+                        <li><a class="text-base font-bold">Blog</a></li>
+                        <li><a class="text-base font-bold">Contact</a></li>
+                    </ul>
+                </div>
+                <a class="text-[#131318] text-4xl font-extrabold">Hockey's</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-base font-bold common-color">Home</a></li>
+                    <li><a class="text-base font-bold">About</a></li>
+                    <li><a class="text-base font-bold">Pages</a></li>
+                    <li><a class="text-base font-bold">Blog</a></li>
+                    <li><a class="text-base font-bold">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <i class="fa-solid fa-magnifying-glass mr-6 hidden lg:block"></i>
+                <a class="btn common-back text-white font-bold text-xl">Get Tickets</a>
+            </div>
+        </div>
+
+        <!-- banner image start here -->
+        <div class="mt-12 carousel w-full lg:h-[550px]">
+            <!-- slider 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <!-- image 1 start here -->
+                <div class=" relative">
+                    <img src="images/1.png" class="" alt="">
+                    <div class="w-[500px] p-8 bg-[#131318] rounded-2xl lg:absolute bottom-7 right-7 hidden lg:block">
+                        <h3 class="text-2xl text-white font-extrabold mb-7">Meet all the heroes from the field</h3>
+                        <p class="font-semibold text-[#FFFFFF99] text-base">Stay in the loop with the latest happenings
+                            in the hockey world. From thrilling match recaps
+                            to trade rumors and player spotlights, we've got you covered.</p>
+                    </div>
+                </div>
+                <!-- image 1 end here -->
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <!-- slider 2  -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <!-- image 2 start here -->
+                <div class=" relative">
+                    <img src="images/1.png" class="" alt="">
+                    <div class="w-[500px] p-8 bg-[#131318] rounded-2xl lg:absolute bottom-7 right-7 hidden lg:block">
+                        <h3 class="text-2xl text-white font-extrabold mb-7">Meet all the heroes from the field</h3>
+                        <p class="font-semibold text-[#FFFFFF99] text-base">Stay in the loop with the latest happenings
+                            in the hockey world. From thrilling match recaps
+                            to trade rumors and player spotlights, we've got you covered.</p>
+                    </div>
+                </div>
+                <!-- image 2 end here -->
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slider 3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <!-- image 3 start here -->
+                <div class=" relative">
+                    <img src="images/1.png" class="" alt="">
+                    <div class="w-[500px] p-8 bg-[#131318] rounded-2xl lg:absolute bottom-7 right-7 hidden lg:block">
+                        <h3 class="text-2xl text-white font-extrabold mb-7">Meet all the heroes from the field</h3>
+                        <p class="font-semibold text-[#FFFFFF99] text-base">Stay in the loop with the latest happenings
+                            in the hockey world. From thrilling match recaps
+                            to trade rumors and player spotlights, we've got you covered.</p>
+                    </div>
+                </div>
+                <!-- image 3 end here -->
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slider 4 -->
+            <div id="slide4" class="carousel-item relative w-full">
+                <!-- image 4 start here -->
+                <div class=" relative">
+                    <img src="images/1.png" class="" alt="">
+                    <div class="w-[500px] p-8 bg-[#131318] rounded-2xl lg:absolute bottom-7 right-7 hidden lg:block">
+                        <h3 class="text-2xl text-white font-extrabold mb-7">Meet all the heroes from the field</h3>
+                        <p class="font-semibold text-[#FFFFFF99] text-base">Stay in the loop with the latest happenings
+                            in the hockey world. From thrilling match recaps
+                            to trade rumors and player spotlights, we've got you covered.</p>
+                    </div>
+                </div>
+                <!-- image 4 end here -->
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- this code inside maybe deleted -->
+        <div class="w-full p-6 mt-5 bg-[#131318] rounded-2xl lg:absolute bottom-7 right-7 block lg:hidden">
+            <h3 class="text-2xl text-white font-extrabold mb-5">Meet all the heroes from the field</h3>
+            <p class="font-semibold text-[#FFFFFF99] text-base">Stay in the loop with the latest happenings in the
+                hockey world. From thrilling match recaps
+                to trade rumors and player spotlights, we've got you covered.</p>
+        </div>
+        <!-- this code inside maybe deleted -->
+
+
+    </header>
+
+    <!-- main start  -->
+    <main></main>
+
+    <!-- footer start -->
+    <footer></footer>
+
+
+
+
 </body>
+
 </html>
